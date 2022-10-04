@@ -8,54 +8,483 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
-    <title>Document</title>
+    <script src="js/script.js" defer></script>
+    <title>Portafolio</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="">
-        </div>
-        <nav>
-            <ul>
-                <a href="">
-                    <li>Home</li>
-                </a>
-                <a href="">
-                    <li>Acerca de mi</li>
-                </a>
-                <a href="pages/paginas.html">
-                    <li>Paginas</li>
-                </a>
-            </ul>
-        </nav>
-    </header>
-
     <main>
 
+        <div>
+            <div>
+                <h3>Alan Gentile Aumente</h4>
+                    <h4>Programador</h5>
+            </div>
+
+            <nav>
+                <article>
+                    <a href="#inicio">
+                        <img src="img/ico/house-solid.svg" alt="Inicio" class="main-ico">
+                        <p>Inicio</p>
+                    </a>
+                </article>
+
+                <article>
+                    <a href="#sobre_mi">
+                        <img src="img/ico/user-solid.svg" alt="Sobre mi" class="main-ico">
+                        <p>Sobre Mi</p>
+                    </a>
+                </article>
+
+                <article>
+                    <a href="#tecnologias-container">
+                        <img src="img/ico/microchip-solid.svg" alt="Tecnologias" class="main-ico">
+                        <p>Tecnologias</p>
+                    </a>
+                </article>
+
+                <article>
+                    <a href="#proyectos-cont">
+                        <img src="img/ico/folder-solid.svg" alt="Proyectos" class="main-ico">
+                        <p>Proyectos</p>
+                    </a>
+                </article>
+
+                <article>
+                    <a href="#contacto">
+                        <img src="img/ico/cloud-solid.svg" alt="Recursos" class="main-ico">
+                        <p>Contacto</p>
+                    </a>
+                </article>
+            </nav>
+
+            <section>
+                <a href="content/cv.pdf" download="CV - Gentile Aumente Alan">
+                    <img src="img/ico/download-solid.svg" alt="Descargar CV" class="main-ico">
+                    <p>Descargar CV</p>
+                </a>
+            </section>
+        </div>
+
+
+        <div>
+            <section id="inicio" class="main-container">
+                <h1>printf("¡Hola mundo! ¡Mi nombre es Alan!");</h1>
+                <h2>Me interesa la programacion y el mundo de la informatica</h2>
+            </section>
+
+            <section id="sobre_mi" class="main-container">
+                <h4>Sobre Mi</h4>
+                <div class="linea"></div>
+
+                <article>
+                    <div>
+                        <img src="img/perfil.jpeg" alt="Foto de perfil">
+                    </div>
+
+                    <div>
+                        <h5>Alan Gentile Aumente</h5>
+                        <p>Soy estudiante de Ingenieria Informatica y tambien de una Tecnicatuda en Desarrollo Web
+                            ambas en la Universidad Nacional de La Matanza (UNLaM). Tengo conocimientos en varios lenguajes
+                            de programacion, reparacion de computadoras y Ethical Hacking. <br><br> Quiero formar parte de una empresa 
+                            en la que poder aplicar mis conocimientos y capacidades en estrategias reales, contribuyendo con ello 
+                            tanto a mi evolución profesional como a alcanzar los objetivos planteados por la empresa.
+                        </p>
+                    </div>
+                </article>
+
+            </section>
+
+            <section id="tecnologias-container" class="main-container">
+                <h4>Tecnologias</h4>
+                <div class="linea"></div>
+
+
+                <article>
+                    <h5>Front-End</h5>
+                    <div class="linea interna"></div>
+
+                    <div class="tecnologia">
+                        <div>
+                            <img src="img/ico/html5.svg" alt="" class="tech-icon">
+                            <p>HTML</p>
+                        </div>
+
+                        <div>
+                            <img src="img/ico/css3-alt.svg" alt="" class="tech-icon">
+                            <p>CSS</p>
+                        </div>
+
+                        <div>
+                            <img src="img/ico/square-js.svg" alt="" class="tech-icon">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h5>Back-End</h5>
+                    <div class="linea interna"></div>
+
+                    <div class="tecnologia">
+                        <div>
+                            <img src="img/ico/c-lenguaje.svg" alt="Lenguaje C" class="tech-icon">
+                            <p>C</p>
+                        </div>
+
+                        <div>
+                            <img src="img/ico/c-plus_plus.svg" alt="Lenguaje C++" class="tech-icon">
+                            <p>C++</p>
+                        </div>
+
+                        <div>
+                            <img src="img/ico/c-sharp.svg" alt="Lenguaje C#" class="tech-icon">
+                            <p>C#</p>
+                        </div>
+
+                        <div>
+                            <img src="img/ico/java.svg" alt="Java" class="tech-icon">
+                            <p>Java</p>
+                        </div>
+
+                        <div>
+                            <img src="img/ico/python.svg" alt="Python" class="tech-icon">
+                            <p>Python</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article>
+                    <h5>Software</h5>
+                    <div class="linea interna"></div>
+
+                    <div class="tecnologia">
+                        <div>
+                            <img src="img/ico/github.svg" alt="GitHub" class="tech-icon">
+                            <p>GitHub</p>
+                        </div>
+
+                        <div>
+                            <img src="img/ico/figma.svg" alt="Figma" class="tech-icon">
+                            <p>Figma</p>
+                        </div>
+
+                        <div>
+                            <img src="img/ico/unity.svg" alt="Unity" class="tech-icon">
+                            <p>Unity</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article>
+                    <h5>Sistemas Operativos</h5>
+                    <div class="linea interna"></div>
+
+                    <div class="tecnologia">
+                        <div>
+                            <img src="img/ico/windows.svg" alt="" class="tech-icon">
+                            <p>Windows</p>
+                        </div>
+
+                        <div>
+                            <img src="img/ico/kali_linux.svg" alt="Kali Linux" class="tech-icon">
+                            <p>Kali Linux</p>
+                        </div>
+                    </div>
+
+                </article>
+            </section>
+
+            <section id="proyectos-cont" class="main-container">
+                <h4>Proyectos</h4>
+                <div class="linea"></div>
+
+                <!--Categogias-->
+                <div id="categorias">
+                    <a class="proy-container" id="cat_web">
+                        <div>
+                            <img src="img/paginas/categorias/web.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3>Web</h3>
+                        </div>
+
+                        <div>
+                            <p>Productos relacionado con Paginas Web desarrollados durante Capacitaciones, Cursos,
+                                Cursada Universitaria o por entretenimiento.</p>
+                        </div>
+                    </a>
+
+                    <a class="proy-container" id="cat_soft">
+                        <div>
+                            <img src="img/paginas/categorias/software.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3>Software</h3>
+                        </div>
+
+                        <div>
+                            <p>Software, Scripts para Unity, Macros y demas producto software</p>
+                        </div>
+                    </a>
+                </div>
+                <!--End_Categorias-->
+
+                <!--Sub-Categorias-->
+                <div id="sub-cat_web">
+                    <a class="proy-container" id="web-one">
+                        <div>
+                            <img src="img/paginas/sub-categorias/one.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3>ONE</h3>
+                        </div>
+
+                        <div>
+                            <p>Paginas desarrolladas durante la cursada en el programa Oracle Next Education.</p>
+                        </div>
+                    </a>
+
+                    <a class="proy-container" id="web-dev">
+                        <div>
+                            <img src="img/paginas/sub-categorias/dev.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3>Desarrollo Personal</h3>
+                        </div>
+
+                        <div>
+                            <p>Paginas desarrolladas para practicar y poner a prueba mis habilidades.</p>
+                        </div>
+
+                    </a>
+
+                    <a class="proy-container" id="web-unlam">
+                        <div>
+                            <img src="img/paginas/sub-categorias/unlam.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3>UNLaM</h3>
+                        </div>
+
+                        <div>
+                            <p>Paginas desarrolladas durante las distintas cursadas en la carrera de Tecnicatura en
+                                Desarrollo Web en la UNLaM.</p>
+                        </div>
+                    </a>
+
+                    <a id="volver-cat" class="proy-container">
+                        <div>
+                            <img src="img/paginas/volver.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3>Volver Atras</h3>
+                        </div>
+
+                        <div>
+                            <p>Volver a la pagina anterior</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="sub-cat_soft">
+                    <a class="proy-container" id="soft-unity">
+                        <div>
+                            <img src="img/paginas/sub-categorias/one.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3>Unity</h3>
+                        </div>
+
+                        <div>
+                            <p>Scripts, Librerias, FrameWorks y Juegos desarrollados en Unity</p>
+                        </div>
+                    </a>
+
+                    <a id="volver-cat" class="proy-container">
+                        <div>
+                            <img src="img/paginas/volver.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3>Volver Atras</h3>
+                        </div>
+
+                        <div>
+                            <p>Volver a la pagina anterior</p>
+                        </div>
+                    </a>
+                </div>
+                <!--End_Sub-Categorias-->
+
+                <!--Seccion-Web-->
+                <div id="proyectos_web_dev">
+                    <a href="https://genti13.github.io/Primera_Pagina_Web/" class="proy-container">
+                        <div>
+                            <img src="img/paginas/proyectos/desarrollo_personal/primer_pagina.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3>Primer Pagina</h3>
+                        </div>
+
+                        <div>
+                            <p>Primer Pagina que desarrolle aprendiendo de tutoriales y cursos en youtube.</p>
+                        </div>
+                    </a>
+
+                    <a href="https://genti13.github.io/Primer-Formulario-De-Registro/" class="proy-container">
+                        <div>
+                            <img src="img/paginas/proyectos/desarrollo_personal/primer_registro.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3>Pagina de Registro</h3>
+                        </div>
+
+                        <div>
+                            <p>Primer Pagina de Registro que desarrolle aprendiendo de tutoriales y cursos en youtube.
+                            </p>
+                        </div>
+                    </a>
+                    <a id="volver-cat" class="proy-container">
+                        <div>
+                            <img src="img/paginas/volver.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3>Volver Atras</h3>
+                        </div>
+
+                        <div>
+                            <p>Volver a la pagina anterior</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="proyectos_web_one">
+                    <a id="volver-cat" class="proy-container">
+                        <div>
+                            <img src="img/paginas/volver.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3>Volver Atras</h3>
+                        </div>
+
+                        <div>
+                            <p>Volver a la pagina anterior</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="proyectos_web_unlam">
+                    <a id="volver-cat" class="proy-container">
+                        <div>
+                            <img src="img/paginas/volver.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3>Volver Atras</h3>
+                        </div>
+
+                        <div>
+                            <p>Volver a la pagina anterior</p>
+                        </div>
+                    </a>
+                </div>
+                <!--End_Seccion-Web-->
+
+                <!--Seccion-Software-->
+                <div id="proyectos_soft_unity">
+                    <a id="volver-cat" class="proy-container">
+                        <div>
+                            <img src="img/paginas/volver.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3>Volver Atras</h3>
+                        </div>
+
+                        <div>
+                            <p>Volver a la pagina anterior</p>
+                        </div>
+                    </a>
+                </div>
+                <!--End_Seccion-Software-->
+            </section>
+
+            <section id="contacto" class="main-container">
+                <h4>Contacto</h4>
+                <div class="linea"></div>
+
+                <h4>Datos</h4>
+                <div class="linea interna"></div>
+
+                <section class="datos-contacto">
+                    <article>
+                        <img src="img/ico/phone.svg" alt="" class="main-ico">
+                        <p>+54 011 5096-2088</p>
+                    </article>
+
+                    <article>
+                        <img src="img/ico/mail.svg" alt="" class="main-ico">
+                        <p><a href="mailto:alanaumente@gmail.com">alanaumente@gmail.com</a></p>
+                    </article>
+                </section>
+
+                <h4>Contactarme</h4>
+                <div class="linea interna"></div>
+
+                <form action="mailto:alanaumente@gmail.com" method="post" enctype="text/plain" class="contacto-form">
+
+                    <div>
+                        <input type="text" name="nombre" id="contacto-nombre" placeholder="Nombre" required>
+                        <input type="email" name="mail"  id="contacto-mial" placeholder="Mail" required>
+                    </div>
+
+                    <input type="text" name="asunto" id="contacto-asunto" placeholder="Asunto" required>
+
+                    <textarea name="mensaje" id="contacto-mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+
+                    <input type="submit" value="Enviar Mensaje">
+
+                </form>
+            </section>
+
+        </div>
     </main>
 
     <footer>
-            <div>
-                <img src="/img/logo.png" alt="">
-            </div>
-            <div>
-                <h3>Acerca de</h3>
-                <ul class="foot-about">
-                    <li><a href="https://www.unlam.edu.ar">UNLaM</a></li>
-                    <li><a href="https://www.oracle.com/ar/education/oracle-next-education/">ONE</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Redes</h3>
-                <ul class="icon">
-                    <li><a href="https://www.instagram.com/el_genti_/"><img src="/img/ico/instagram.svg" alt=""></a></li>
-                    <li><a href="https://github.com/Genti13"><img src="/img/ico/github.svg" alt=""></a></li>
-                    <li><a href="https://www.linkedin.com/in/gentile-alan/"><img src="/img/ico/linkedin.svg" alt=""></a></li>
-                </ul>
-            </div>
+        <div>
+            <img src="/img/logo.png" alt="">
+        </div>
+        <div>
+            <h3>Acerca de</h3>
+            <ul class="foot-about">
+                <li><a href="https://www.unlam.edu.ar">UNLaM</a></li>
+                <li><a href="https://www.oracle.com/ar/education/oracle-next-education/">ONE</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Redes</h3>
+            <ul class="icon">
+                <li><a href="https://www.instagram.com/el_genti_/"><img src="/img/ico/instagram.svg" alt=""></a></li>
+                <li><a href="https://github.com/Genti13"><img src="/img/ico/github.svg" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/gentile-alan/"><img src="/img/ico/linkedin.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
 
     </footer>
 

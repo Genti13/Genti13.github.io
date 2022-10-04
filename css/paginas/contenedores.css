@@ -46,9 +46,9 @@
 .contenedores li p {
     margin: 10px;
     display: flex;
-    align-items: center;
-    height: 50px;
+    height: auto;
     text-align: center;
+    font-size: 80%;
 }
 
 .contenedores a {
@@ -56,18 +56,18 @@
     color: #000000;
 }
 
-.contenedores div{
+.contenedores div {
     background-color: #FFFFFF;
     border-radius: 10px 10px 0px 0px;
 }
 
-@media screen and (max-width:360px){
+@media screen and (max-width:360px) {
 
     .contenedores {
-        margin: 0%;  
+        margin: 0%;
     }
 
-    .contenedores li h2{
+    .contenedores li h2 {
         font-size: 12px;
     }
 
@@ -76,7 +76,7 @@
         width: 44%;
     }
 
-    .contenedores li p{
+    .contenedores li p {
         font-size: 10px;
         text-align: center;
     }
