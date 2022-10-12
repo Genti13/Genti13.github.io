@@ -1,6 +1,14 @@
 @import url(reset.css);
 @import url(footer-header.css);
 
+:root {
+    --violeta: rgb(155, 51, 155);
+    --violeta_2: #af4baa;
+    --rojo: rgb(219, 34, 34);
+    --verde: #4caf50;
+    --celeste: rgb(33, 150, 243);
+}
+
 body {
     background-color: #eeeeee;
 }
@@ -68,8 +76,6 @@ main>div:first-child>nav:nth-child(2) a:hover .main-ico {
     filter: brightness(0) saturate(100%) invert(25%) sepia(60%) saturate(2608%) hue-rotate(279deg) brightness(85%) contrast(85%);
 }
 
-
-
 main>div:first-child>div:first-child {
     border-bottom: 2px solid #000000;
 }
@@ -90,7 +96,7 @@ main>div:last-child {
 }
 
 main>div:first-child>section:last-child a {
-    background-color: rgb(219, 34, 34);
+    background-color: var(--celeste);
     text-align: center;
     align-items: center;
     margin: auto;
@@ -100,7 +106,7 @@ main>div:first-child>section:last-child a {
 }
 
 main>div:first-child>section:last-child a:hover {
-    background-color: rgb(155, 51, 155);
+    background-color: var(--violeta);
 }
 
 .main-ico {
@@ -122,7 +128,7 @@ main>div:first-child>section:last-child a:hover {
 
 /*Hola mundo*/
 #inicio {
-    background-color: #4caf50;
+    background-color: var(--verde);
     color: #ffffff;
     text-align: center;
 }
@@ -139,7 +145,7 @@ main>div:first-child>section:last-child a:hover {
 /*Sobre mi*/
 
 .linea {
-    background-color: rgb(226, 52, 52);
+    background-color: var(--rojo);
     border-radius: 30px;
     height: 8px;
     width: 40px;
@@ -176,7 +182,7 @@ div .tecnologia>div,
 }
 
 .interna {
-    background-color: rgb(155, 51, 155);
+    background-color: var(--violeta);
 }
 
 .tech-icon {
@@ -206,12 +212,12 @@ div .tecnologia>div,
 }
 
 .proy-container:hover {
-    border-color: #af4baa;
+    border-color: var(--violeta_2);
     transform: scale(1.2);
 }
 
 .proy-container:hover h3 {
-    border-color: #af4baa;
+    border-color: var(--violeta_2);
 }
 
 .proy-container div:first-child {
@@ -266,6 +272,11 @@ div .tecnologia>div,
     display: none;
 }
 
+.proy-container>.project-warning {
+    color: var(--rojo);
+    font-weight: 800;
+}
+
 /*Contacto*/
 .contacto-form {
     display: flex;
@@ -289,6 +300,13 @@ input[type=submit] {
     width: fit-content;
     padding: 8px 16px;
     cursor: pointer;
+    background-color: var(--verde);
+    color: #ffffff;
+}
+
+input[type=submit]:hover {
+    background-color: var(--celeste);
+    transition: 0.2s ease-out;
 }
 
 input,
@@ -306,28 +324,140 @@ textarea {
 input:not([type=submit]) {
     font-size: medium;
     padding: 8px 8px;
-
 }
 
-.datos-contacto{
+.datos-contacto {
     margin-bottom: 1em;
     display: flex;
     justify-content: center;
     gap: 5em;
 }
 
-.datos-contacto>article{
+.datos-contacto>article {
     display: flex;
     margin-bottom: 0.5em;
-    background-color: #4caf50;
+    background-color: var(--verde);
     padding: 0.5em 1em;
     border-radius: 1em;
     box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
     border: 1px solid #000000;
 }
 
-.datos-contacto>article>p{
+.datos-contacto>article>p {
     line-height: 1.3em;
     margin-left: 0.5em;
     color: #ffffff;
+}
+
+.datos-contacto>.descargar-cv {
+    display: none;
+    background-color: var(--celeste);
+}
+
+.descargar-cv>a{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 420px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 100%;
+    }
+
+    #sobre_mi p {
+        font-size: 70%;
+    }
+
+    main,
+    main>div:last-child {
+        margin: 0px;
+    }
+
+    main>div:first-child {
+        display: none;
+    }
+
+    main {
+        justify-content: center;
+    }
+
+    main>div:last-child {
+        width: 95%;
+        margin: 1em;
+    }
+
+    main>div:last-child>section:nth-child(2) img {
+        width: 100px;
+        height: 100px;
+        margin-top: 30%;
+    }
+
+    .proy-container {
+        width: calc(50% - 1em);
+    }
+
+    .contacto-form {
+        padding: 0px;
+        margin: 1em;
+    }
+
+    .datos-contacto {
+        width: fit-content;
+        flex-direction: column;
+        gap: 0.5em;
+        margin: auto;
+    }
+
+    .datos-contacto>article {
+        padding: 0.5em 1em;
+    }
+
+    .datos-contacto>.descargar-cv {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    main>div:first-child {
+        display: none;
+    }
+
+    main {
+        justify-content: center;
+    }
+
+    main>div:last-child {
+        width: 95%;
+        margin: 1em;
+    }
+
+    .contacto-form {
+        padding: 0px;
+        margin: 1em;
+    }
+
+    .proy-container {
+        width: calc(50% - 1em);
+    }
+
+    .datos-contacto>article {
+        padding: 0.5em 1em;
+    }
+
+    .datos-contacto {
+        flex-wrap: wrap;
+        width: fit-content;
+        gap: 0.5em;
+    }
+
+    .datos-contacto>.descargar-cv {
+        display: block;
+    }
 }

@@ -119,3 +119,13 @@ footer h3 {
 .icon li:hover {
     background-color: rgb(105, 104, 104);
 }
+
+@media screen and (max-width: 420px) {
+    footer{
+        flex-direction: column;
+    }
+
+    footer>div {
+        margin: 0.5em auto;
+    }
+}
