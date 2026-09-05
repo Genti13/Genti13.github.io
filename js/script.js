@@ -1,5 +1,4 @@
-// Diccionario con claves y mensajes completamente cifrados en Base64
-const diccionarioCifrado = {
+const data = {
     "RmFjdVV6dW1ha2k=": ["MyBkZSBvY3R1YnJlIDIwOjAwIC0gR2VudGlGZXN0IERlbHV4ZQ==", "Tk8gRElWVUxHQVIgLSBQb2RlcyB0cmFlciAxIHBlcnNvbmE="],
     "Q2FteVdvb2YxMDAlUmVhbE5vRmFrZQ==": ["MyBkZSBvY3R1YnJlIDIwOjAwIC0gR2VudGlGZXN0IERlbHV4ZQ==", "Tk8gRElWVUxHQVIgLSBQb2RlcyB0cmFlciAxIHBlcnNvbmE="],
     "THVsaVBhbnF1ZXF1ZXM=": ["MyBkZSBvY3R1YnJlIDIwOjAwIC0gR2VudGlGZXN0IERlbHV4ZQ==", "Tk8gRElWVUxHQVIgLSBQb2RlcyB0cmFlciAxIHBlcnNvbmE="],
@@ -26,11 +25,10 @@ function verificarCodigo() {
         return;
     }
 
-    const codigoCifradoIngresado = encriptarTexto(inputVal);
+    const data = encriptarTexto(inputVal);
 
     if (diccionarioCifrado.hasOwnProperty(codigoCifradoIngresado)) {
-        // Obtenemos el array cifrado y lo decodificamos en tiempo real
-        const partesCifradas = diccionarioCifrado[codigoCifradoIngresado];
+        const partesCifradas = data[codigoCifradoIngresado];
         const linea1 = atob(partesCifradas[0]);
         const linea2 = atob(partesCifradas[1]);
 
