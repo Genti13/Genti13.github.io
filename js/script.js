@@ -1,4 +1,4 @@
-const data = {
+const local_data = {
     "RmFjdVV6dW1ha2k=": ["MyBkZSBvY3R1YnJlIDIwOjAwIC0gR2VudGlGZXN0IERlbHV4ZQ==", "Tk8gRElWVUxHQVIgLSBQb2RlcyB0cmFlciAxIHBlcnNvbmE="],
     "Q2FteVdvb2YxMDAlUmVhbE5vRmFrZQ==": ["MyBkZSBvY3R1YnJlIDIwOjAwIC0gR2VudGlGZXN0IERlbHV4ZQ==", "Tk8gRElWVUxHQVIgLSBQb2RlcyB0cmFlciAxIHBlcnNvbmE="],
     "THVsaVBhbnF1ZXF1ZXM=": ["MyBkZSBvY3R1YnJlIDIwOjAwIC0gR2VudGlGZXN0IERlbHV4ZQ==", "Tk8gRElWVUxHQVIgLSBQb2RlcyB0cmFlciAxIHBlcnNvbmE="],
@@ -27,8 +27,8 @@ function verificarCodigo() {
 
     const data = encriptarTexto(inputVal);
 
-    if (diccionarioCifrado.hasOwnProperty(codigoCifradoIngresado)) {
-        const partesCifradas = data[codigoCifradoIngresado];
+    if (local_data.hasOwnProperty(data)) {
+        const partesCifradas = local_data[data];
         const linea1 = atob(partesCifradas[0]);
         const linea2 = atob(partesCifradas[1]);
 
